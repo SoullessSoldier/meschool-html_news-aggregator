@@ -175,12 +175,32 @@
     height: 30px;
     color: #09e079;
 }
+.contacts-link:visited,
+.contacts-link:focus{
+    color: #09e079;
+}
+
+
 .contacts-link:hover{
     filter: drop-shadow(0 0 5px #09e079);
 }
 
-.hide {
-    display: none;
+.preload{
+    background-image: url('../img/preload.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    padding: 180px;
+    margin: 0 auto;
+    animation: rotation 2s linear infinite;
+}
+
+
+
+@keyframes rotation {
+    to{
+        transform: rotate(-360deg);
+    }
 }
 
 @media (max-width: 768px) {
@@ -199,6 +219,10 @@
     }
     .choices{
         width: 100%;
+    }
+    .preload{
+        width: 150px;
+        height: 150px;
     }
 }
 
